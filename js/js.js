@@ -131,4 +131,40 @@ var swiper = new Swiper('.new-projects', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+var swiper = new Swiper('.tesmonials-slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  
+  
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // when window width is <= 320px
+    320: {
+       spaceBetween: 20,
+       slidesPerView: 1
+    },
+    // when window width is <= 480px
+    480: {
+       spaceBetween: 20,
+       slidesPerView: 1
+    },
+    // when window width is <= 640px
+    767: {
+       spaceBetween: 20,
+       slidesPerView: 1
+    },
+    991: {
+       spaceBetween: 20,
+       slidesPerView: 2
+    }
+ }
+});
 });
